@@ -18,5 +18,9 @@
         android:id="@+id/welcomeFragment"
         android:name="com.utn.simplelogin.fragments.welcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <argument
+            android:name="msgWelcome"
+            app:argType="string" />
+    </fragment>
 </navigation>

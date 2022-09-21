@@ -49,10 +49,10 @@ class loginFragment : Fragment() {
             }
 
             if (newList.isEmpty())
-                Snackbar.make(it,"INCORRECTO", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(it,"Datos incorrectos", Snackbar.LENGTH_SHORT).show()
             else
-                Snackbar.make(it,"CORRECTO", Snackbar.LENGTH_SHORT).show()
-                val action = loginFragmentDirections.actionLoginFragmentToWelcomeFragment()
+                Snackbar.make(it,"Autenticado", Snackbar.LENGTH_SHORT).show()
+                val action = loginFragmentDirections.actionLoginFragmentToWelcomeFragment("Bienvenido $user")
                 v.findNavController().navigate(action)
         }
     }
